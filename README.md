@@ -3,8 +3,6 @@ Just a simple custom page to use as a new tab.
 
 ## **Setting a custom new tab page on Firefox**
 
----
-
 Navigate to your Firefox folder
 - Windows: `C:\Program Files\Firefox Developer Edition`
 - Arch Linux: `/usr/lib/Firefox Developer Edition`
