@@ -52,6 +52,10 @@
 		) 1;
 }
 
+#searchbar:placeholder-shown {
+	font-size: 1vw;
+}
+
 #searchbar:focus {
 	transition: 0.2s;
 	border-width: 3px;
