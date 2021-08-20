@@ -1,12 +1,29 @@
-var currentTime = new Date().getHours(), currentImg="";
+const path = "assets/Hateno_Village/"
 
-if (currentTime>=6.00 && currentTime<9.00){ currentImg="assets/Hateno_Village/Hateno_Village_1.jpg"; }
-else if (currentTime>=9.00 && currentTime<2.00){ currentImg="assets/Hateno_Village/Hateno_Village_2.jpg"; }
-else if (currentTime>=2.00 && currentTime<5.00){ currentImg="assets/Hateno_Village/Hateno_Village_3.jpg"; }
-else if (currentTime>=5.00 && currentTime<6.30){ currentImg="assets/Hateno_Village/Hateno_Village_4.jpg"; }
-else if (currentTime>=6.30 && currentTime<8.00){ currentImg="assets/Hateno_Village/Hateno_Village_5.jpg"; }
-else { currentImg="assets/Hateno_Village/Hateno_Village_6.jpg"; }
+const periods = {
+	6: "1.jpg",
+	9: "2.jpg",
+	14: "3.jpg",
+	17: "4.jpg",
+	18: "5.jpg",
+	20: "6.jpg"
+}
 
-document.body.style.backgroundImage = "url("+currentImg+")";
-document.body.style.backgroundSize = "100%";
-// document.body.style.backgroundOrigin = "content-box";
+function setBackground(hour) {
+	var image = path + periods[hour];
+	document.body.style.backgroundImage = "url("+image+")";
+	document.body.style.backgroundSize = "100%";
+}
+
+var hours = Object.keys(periods);
+var currentTime = new Date().getHours();
+
+for (var i=0; i<hours.length-1; i++) {
+	if (currentTime >= hours[i] && currentTime < hours[i+1]) {
+		setBackground(hours[i]);
+	}
+}
+
+if (currentTime >= hours[hours.length-1] || currentTime < hours[0]) {
+	setBackground(hours[hours.length-1]);
+}
