@@ -12,11 +12,12 @@ const periods = {
 function setBackground(hour) {
 	var image = path + periods[hour];
 	document.body.style.backgroundImage = "url("+image+")";
-	document.body.style.backgroundSize = "100%";
+	document.body.style.backgroundSize = "cover";
 }
 
 var hours = Object.keys(periods);
 var currentTime = new Date().getHours();
+/* var currentTime = 6; */
 
 for (var i=0; i<hours.length-1; i++) {
 	if (currentTime >= hours[i] && currentTime < hours[i+1]) {

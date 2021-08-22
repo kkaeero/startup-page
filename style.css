@@ -10,10 +10,9 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	align-content: center;
-	/* background-color: #333333; */
 	height: 100vh;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -23,6 +22,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100vw;
+	position: absolute;
+	top: 0;
 }
 
 .header img {
@@ -31,25 +32,29 @@
 }
 
 .search-wrapper {
-	margin-top: 15vh;
+	margin-bottom: 7vh;
 	width: 30vw;
 }
 
 #searchbar {
-	border: 0;
-	border-bottom: 2px solid grey;
 	background: transparent;
 	outline: 0;
 	color: var(--text-color);
 	padding-bottom: 3px;
-	transition: border-color 0.2s;
+	transition: 0.1s;
 	width: inherit;
+	border: 0;
+	border-bottom: 2px solid grey;
 	border-image:
 		linear-gradient(
 			to right,
-			grey,
-			transparent
+			rgb(144,144,144,1),
+			rgb(144,144,144,0)
 		) 1;
+	-webkit-transition: border 500ms ease-out;
+	-moz-transition: border 500ms ease-out;
+	-o-transition: border 500ms ease-out;
+	transition: border 500ms ease-out;
 }
 
 #searchbar:placeholder-shown {
@@ -58,7 +63,7 @@
 
 #searchbar:focus {
 	transition: 0.2s;
-	border-width: 3px;
+	border-width: 2px;
 	border-bottom-style: solid;
 	border-image:
 		linear-gradient(
@@ -75,19 +80,22 @@
 	align-content: center;
 	align-items: center;
 	color: var(--text-color);
-	margin-bottom: 33vh;
 }
 
 .card {
 	height: 25vh;
 	width: 12vw;
-	margin: 0px 5px;
+	margin: 0px 10px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 8px;
+	border: 0;
+	backdrop-filter: blur(3px);
 }
 
 .card legend {
 	font-size: 1.6vw;
 	font-weight: 650;
-	padding-left: 0.2em;
+	margin-left: 0.8em;
 }
 
 .card ul li {
