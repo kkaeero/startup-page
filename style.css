@@ -34,6 +34,10 @@
 .search-wrapper {
 	margin-bottom: 7vh;
 	width: 30vw;
+	padding: 1rem 1.3rem;
+	backdrop-filter: blur(5px);
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 8px;
 }
 
 #searchbar {
@@ -51,14 +55,10 @@
 			rgb(144,144,144,1),
 			rgb(144,144,144,0)
 		) 1;
-	-webkit-transition: border 500ms ease-out;
-	-moz-transition: border 500ms ease-out;
-	-o-transition: border 500ms ease-out;
-	transition: border 500ms ease-out;
 }
 
 #searchbar:placeholder-shown {
-	font-size: 1vw;
+	font-size: 1em;
 }
 
 #searchbar:focus {
@@ -82,8 +82,12 @@
 	color: var(--text-color);
 }
 
+.cards-wrapper>div {
+	position: relative;
+}
+
 .card {
-	height: 25vh;
+	height: 20.5vh;
 	width: 12vw;
 	margin: 0px 10px;
 	background: rgba(0,0,0,0.1);
@@ -92,19 +96,31 @@
 	backdrop-filter: blur(3px);
 }
 
-.card legend {
-	font-size: 1.6vw;
+legend {
+	font-size: 1.7em;
 	font-weight: 650;
-	margin-left: 0.8em;
+	margin-left: 0.5em;
+	position: absolute;
+	z-index: 99999;
+	top: -20px;
+}
+
+.card ul {
+	margin-top: 20px;
 }
 
 .card ul li {
 	list-style: none;
-	font-size: 1vw;
+	font-size: 1.1em;
 	padding: 1em 0em 0em 1em;
 }
 
 .card a {
 	text-decoration: none;
 	color: var(--text-color);
+}
+
+.card a:hover{
+	color: #34cfa1;
+	transition: 0.3s;
 }
