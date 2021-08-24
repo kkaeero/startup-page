@@ -17,7 +17,7 @@ function setBackground(hour) {
 
 var hours = Object.keys(periods);
 var currentTime = new Date().getHours();
-/* var currentTime = 6; */
+/* var currentTime = 18; */
 
 for (var i=0; i<hours.length-1; i++) {
 	if (currentTime >= hours[i] && currentTime < hours[i+1]) {

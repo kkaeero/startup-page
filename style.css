@@ -29,6 +29,7 @@
 .header img {
 	width: 40px;
 	margin: 1em;
+	cursor: pointer;
 }
 
 .search-wrapper {
@@ -40,7 +41,7 @@
 	border-radius: 8px;
 }
 
-#searchbar {
+.searchbar {
 	background: transparent;
 	outline: 0;
 	color: var(--text-color);
@@ -57,11 +58,15 @@
 		) 1;
 }
 
-#searchbar:placeholder-shown {
+.searchbar[type=text] {
 	font-size: 1em;
 }
 
-#searchbar:focus {
+.searchbar:placeholder-shown {
+	font-size: 1em;
+}
+
+.searchbar:focus {
 	transition: 0.2s;
 	border-width: 2px;
 	border-bottom-style: solid;
