@@ -5,6 +5,7 @@
 
 :root {
 	--text-color: #ffffff;
+	--secondary-color: #34cfa1;
 }
 
 .content {
@@ -26,10 +27,15 @@
 	top: 0;
 }
 
-.header img {
+.icons {
 	width: 40px;
 	margin: 1em;
 	cursor: pointer;
+}
+
+path:hover {
+	fill: var(--secondary-color);
+	transition: 0.3s;
 }
 
 .search-wrapper {
@@ -73,7 +79,7 @@
 	border-image:
 		linear-gradient(
 			to right,
-			#12b886,
+			var(--secondary-color),
 			rgba(0,0,0,0)
 		) 1;
 }
@@ -126,6 +132,6 @@ legend {
 }
 
 .card a:hover{
-	color: #34cfa1;
+	color: var(--secondary-color);
 	transition: 0.3s;
 }
