@@ -105,6 +105,7 @@ path:hover {
 	border-radius: 8px;
 	border: 0;
 	backdrop-filter: blur(3px);
+	position: relative;
 }
 
 legend {
