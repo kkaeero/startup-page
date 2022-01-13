@@ -112,7 +112,6 @@ legend {
 	font-size: 1.7em;
 	font-weight: 650;
 	margin-left: 0.5em;
-	position: absolute;
 	z-index: 99999;
 	top: -20px;
 }

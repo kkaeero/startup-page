@@ -1,4 +1,4 @@
-const path = "assets/Kakariko_Village/"
+const path = "assets/Dueling_Peaks_Stable/"
 
 const periods = {
 	6: "1.jpg",
