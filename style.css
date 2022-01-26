@@ -68,7 +68,8 @@ path:hover {
 	font-size: 1em;
 }
 
-.searchbar:placeholder-shown {
+::placeholder {
+	color: rgb(212, 212, 212);
 	font-size: 1em;
 }
 
@@ -98,7 +99,7 @@ path:hover {
 }
 
 .card {
-	height: 20.5vh;
+	/* height: 20.5vh; */
 	width: 12vw;
 	margin: 0px 10px;
 	background: rgba(0,0,0,0.1);
@@ -123,7 +124,7 @@ legend {
 .card ul li {
 	list-style: none;
 	font-size: 1.1em;
-	padding: 1em 0em 0em 1em;
+	padding: 0.5em 0em 0.5em 1em;
 }
 
 .card a {
