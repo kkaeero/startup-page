@@ -1,11 +1,8 @@
-# Startup Page
-Just a simple custom page to use as a new tab.
-
 ## **Setting a custom new tab page on Firefox**
 
 Navigate to your Firefox folder
-- Windows: `C:\Program Files\Firefox Developer Edition`
-- Arch Linux: `/usr/lib/Firefox Developer Edition`
+- Windows: `C:\Program Files\Firefox`
+- Arch Linux: `/usr/lib/firefox`
 - macOS: `/Applications/Firefox.app/Contents/MacOS`
 
 Navigate to `defaults/pref` o `defaults/preferences` and create a file named `autoconfig.js` with this content inside:
