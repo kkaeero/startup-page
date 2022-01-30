@@ -19,9 +19,6 @@
 }
 
 .header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	width: 100vw;
 	position: absolute;
 	top: 0;
@@ -87,7 +84,6 @@ path:hover {
 
 .cards-wrapper {
 	display: flex;
-	flex-direction: row nowrap;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -135,4 +131,14 @@ legend {
 .card a:hover{
 	color: var(--secondary-color);
 	transition: 0.3s;
+}
+
+@media screen and (max-width:1000px) {
+
+}
+@media screen and (max-width:450px) {
+	.cards-wrapper {
+		flex-direction: column;
+
+	}
 }
