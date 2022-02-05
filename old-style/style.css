@@ -1,14 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
+
+@font-face {
+    font-family: Minecraft;
+    src: url("/old-style/assets/font/Minecraft.ttf");
 }
 
 :root {
     --margin:0.6rem 0.6rem 0 0.6rem;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url(/old-style/assets/background.jpg);
+    background-image: url("/old-style/assets/background.jpg");
     background-position: inherit;
     font-family: Minecraft;
 }
@@ -46,7 +52,7 @@ body {
 .img-wrapper {
     margin: var(--margin);
     width: 18vw;
-    background-image: url(/old-style/assets/fall.png);
+    background-image: url("/old-style/assets/fall.png");
     background-position: top;
     background-size: cover;
 }
@@ -57,9 +63,4 @@ body {
 
 p {
     font-size: 80pt;
-}
-
-@font-face {
-    font-family: Minecraft;
-    src: url(/old-style/assets/font/Minecraft.ttf);
 }
