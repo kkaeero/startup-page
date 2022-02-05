@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --margin:0.6rem 0.6rem 0 0.6rem;
+}
+
+body {
+    background-image: url(/assets/background.jpg);
+    background-position: inherit;
+    font-family: Minecraft;
+}
+
+/* Gets rids of scrollbar  */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 45vw;
+    height: 55vh;
+    background-color: #ad7657;
+}
+
+.header {
+    height: 3.5vh;
+    margin: var(--margin);
+    background-color: rgb(42, 176, 238, 0.4);
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-height: 100%;
+}
+
+.img-wrapper {
+    margin: var(--margin);
+    width: 18vw;
+    background-image: url(/assets/fall.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+p {
+    font-size: 80pt;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(/assets/font/Minecraft.ttf);
+}
