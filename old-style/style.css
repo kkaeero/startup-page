@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(/assets/background.jpg);
+    background-image: url(/old-style/assets/background.jpg);
     background-position: inherit;
     font-family: Minecraft;
 }
@@ -46,7 +46,7 @@ body {
 .img-wrapper {
     margin: var(--margin);
     width: 18vw;
-    background-image: url(/assets/fall.png);
+    background-image: url(/old-style/assets/fall.png);
     background-position: top;
     background-size: cover;
 }
@@ -61,5 +61,5 @@ p {
 
 @font-face {
     font-family: Minecraft;
-    src: url(/assets/font/Minecraft.ttf);
+    src: url(/old-style/assets/font/Minecraft.ttf);
 }
