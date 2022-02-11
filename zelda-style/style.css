@@ -6,6 +6,7 @@
 :root {
 	--text-color: #ffffff;
 	--secondary-color: #34cfa1;
+	--radial-gradient: radial-gradient(farthest-corner at 40px 40px, transparent, rgb(212, 241, 244, 0.3) 100%);
 }
 
 .content {
@@ -42,6 +43,7 @@ path:hover {
 	backdrop-filter: blur(5px);
 	background-color: rgba(0,0,0,0.1);
 	border-radius: 8px;
+	background-image: var(--radial-gradient);
 }
 
 .searchbar {
@@ -103,6 +105,7 @@ path:hover {
 	border: 0;
 	backdrop-filter: blur(3px);
 	position: relative;
+	background-image: var(--radial-gradient);
 }
 
 legend {
