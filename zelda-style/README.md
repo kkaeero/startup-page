@@ -8,4 +8,4 @@ Background changes based off the current time :D
 
 ###### Small detail:
 
-Backdrop-filter doesn't work on Firefox 
+Backdrop-filter doesn't work on Firefox
