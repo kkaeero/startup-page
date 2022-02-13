@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: Minecraft;
-    src: url(/startup-pages/old-style/assets/font/Minecraft.ttf);
+    font-family: Minecraftia;
+    src: url(/startup-pages/old-style/assets/font/Minecraftia-Regular.ttf);
 }
 
 :root {
-    --border-style: #e3a665 ridge 0.3rem;
+    --border-style: #7e8768 ridge 0.4rem;
 }
 
 * {
@@ -15,8 +15,10 @@
 
 body {
     background-image: url(/startup-pages/old-style/assets/background.jpg);
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
     background-position: inherit;
-    font-family: Minecraft;
+    font-family: Minecraftia;
 }
 
 /* Gets rids of scrollbar  */
@@ -25,25 +27,29 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 45vw;
     height: 55vh;
-    background-color: #ad7657;
+    background-color: #957325;
 }
 
 .header {
-    height: 3.5vh;
     border: var(--border-style);
     border-bottom: none;
-    background-color: rgb(42, 176, 238, 0.4);
+}
+
+.header span {
+    font-size: 22px;
 }
 
 .body-wrapper {
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -67,6 +73,57 @@ body {
     flex-grow: 1;
 }
 
-p {
-    font-size: 80pt;
+.phrase {
+    border-bottom: var(--border-style);
+}
+
+.phrase span {
+    font-size: 20px;
+}
+
+.links-wrapper {
+    text-align: center;
+    margin-top: 9%;
+}
+
+.title-links {
+    font-size: 22px;
+}
+
+.links {
+    margin: 10px 0 25px 0;
+}
+
+.links a {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 795px) {
+    .header span {
+        font-size: 18px;
+    }
+
+    .phrase span {
+        font-size: 16px;
+    }
+
+    .title-links {
+        font-size: 18px;
+    }
+
+    .links a {
+        font-size: 13px;
+    }
+
+    .content {
+        height: auto;
+    }
 }
