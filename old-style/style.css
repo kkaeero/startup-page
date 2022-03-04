@@ -1,11 +1,12 @@
 
 @font-face {
     font-family: Minecraftia;
-    src: url(/startup-pages/old-style/assets/font/Minecraftia-Regular.ttf);
+    src: url(/old-style/assets/font/Minecraftia-Regular.ttf);
 }
 
 :root {
-    --border-style: #7e8768 ridge 0.4rem;
+    /* --border-style: #7e8768 ridge 0.4rem; */
+    --border-style: #9b371f ridge 0.4rem;
 }
 
 * {
@@ -14,10 +15,12 @@
 }
 
 body {
-    background-image: url(/startup-pages/old-style/assets/background.jpg);
+    background-image: url(/old-style/assets/background.jpg);
+    background-attachment: fixed;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
-    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Minecraftia;
 }
 
@@ -36,7 +39,7 @@ body {
     transform: translate(-50%, -50%);
     width: 45vw;
     height: auto;
-    background-color: #957325;
+    background-color: #a0866f;
 }
 
 .header {
@@ -46,6 +49,7 @@ body {
 
 .header span {
     font-size: 22px;
+    padding-left: 5px;
 }
 
 .body-wrapper {
@@ -79,11 +83,12 @@ body {
 
 .phrase span {
     font-size: 20px;
+    padding-left: 5px;
 }
 
 .links-wrapper {
     text-align: center;
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 .title-links {
@@ -106,7 +111,7 @@ body {
     margin-right: 0;
 }
 
-@media only screen and (max-width: 795px) {
+@media only screen and (max-width: 1000px) {
     .header span {
         font-size: 18px;
     }
