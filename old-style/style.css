@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Minecraftia;
-    src: url(/old-style/assets/font/Minecraftia-Regular.ttf);
+    src: url(/startup-pages/old-style/assets/font/Minecraftia-Regular.ttf);
 }
 
 :root {
@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url(/old-style/assets/background.jpg);
+    background-image: url(/startup-pages/old-style/assets/background.jpg);
     background-attachment: fixed;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
